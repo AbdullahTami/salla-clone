@@ -39,7 +39,10 @@ export default function RegisterInfo() {
         {slides.map((slide) => (
           <div key={slide.id} className="bg-white relative">
             <figure>
-              <SwiperSlide className="bg-white p-4 shadow-[0px_4px_14px_0px_rgb(0,0,0,0.1)] opacity-1 ">
+              <SwiperSlide
+                key={slide.id}
+                className="bg-white p-4 shadow-[0px_4px_14px_0px_rgb(0,0,0,0.1)] opacity-1 "
+              >
                 <Image
                   src={slide.image}
                   alt="photo"
