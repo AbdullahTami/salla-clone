@@ -18,6 +18,7 @@ export default function RegisterInfo() {
         src={RegisterImage}
         className="object-cover w-[600px] aspect-auto"
         alt="register image"
+        priority
       />
       <h2 className="text-3xl">كل ما تحتاجه لتنمو بتجارتك الإلكترونية</h2>
       <p className="text-[13px] px-16 text-center">

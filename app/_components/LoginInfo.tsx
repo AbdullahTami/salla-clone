@@ -40,7 +40,13 @@ export default function RegisterInfo() {
           <div key={slide.id} className="bg-white relative">
             <figure>
               <SwiperSlide className="bg-white p-4 shadow-[0px_4px_14px_0px_rgb(0,0,0,0.1)] opacity-1 ">
-                <Image src={slide.image} alt="photo" width={600} height={400} />
+                <Image
+                  src={slide.image}
+                  alt="photo"
+                  width={600}
+                  height={400}
+                  priority
+                />
                 <div className="text-sm fade leading-6 mt-4 space-y-3 font-normal before:absolute before:w-full before:bg-[linear-gradient(0deg,#fffffff0,35%,transparent)] before:h-[70px] before:bottom-0">
                   {slide.text.map((text, i) => (
                     <p key={i}>{text}</p>

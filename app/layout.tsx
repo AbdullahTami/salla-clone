@@ -3,6 +3,7 @@ import { Noto_Sans_Arabic, Poppins } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
 import PopUp from "./_components/PopUp";
+import { Analytics } from "@vercel/analytics/react";
 
 const arabic = Noto_Sans_Arabic({
   subsets: ["arabic"],
@@ -47,6 +48,7 @@ export default function RootLayout({
         />
         <PopUp />
         <main className="bg-white">{children}</main>
+        <Analytics />
       </body>
     </html>
   );

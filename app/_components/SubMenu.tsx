@@ -51,6 +51,7 @@ export default function SubMenu({
                     src={link.icon ? link.icon : ""}
                     alt="icon"
                     width={35}
+                    priority
                     className="object-cover "
                   />
 
