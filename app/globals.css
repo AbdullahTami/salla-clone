@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    display: none;
+  }
+  input[type="number"].number-to-text {
+    -moz-appearance: textfield;
+  }
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #004956 #f1f1f1;
+}
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #004956;
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+}
+
+.container {
+  @apply max-w-perfect mx-auto;
+}
+
+.infoSwiper {
+  width: 414px;
+  height: 400px;
+}
+.arabic {
+  font-family: var(--font-arabic), sans-serif;
+}
+
+.poppins {
+  font-family: var(--font-poppins), sans-serif;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  /* color: #fff; */
+}
+
+.swiper-3d .swiper-slide-shadow {
+  background: white !important;
+}
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  gap: 4px;
+  margin-top: 2rem;
+}
+
+.swiper-pagination-bullet {
+  display: inline-block;
+  background-color: #ddd;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #004956;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: rgb(68 68 68) !important;
+  top: unset !important;
+  left: unset !important;
+  bottom: unset !important;
+  right: unset !important;
+  width: auto !important;
+  width: 50px !important;
+  height: 50px !important;
+  display: block !important;
+  /* font-size: 20px !important; */
+  position: static !important;
+  transition: all 0.3s;
+  /* font-weight: 400px !important; */
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  transition: all 0.3s;
+}
+
+.spinner {
+  width: 60px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid theme("colors.accent.100");
+  border-right-color: transparent;
+  animation: rotate 1s infinite linear;
+}
+
+.spinner-mini {
+  margin: 0;
+  width: 20px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 2px solid white;
+  border-right-color: transparent;
+  animation: rotate 1s infinite linear;
+}
+@keyframes rotate {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+::placeholder {
+  font-family: var(--font-arabic);
+}
