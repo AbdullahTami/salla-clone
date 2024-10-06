@@ -9,5 +9,5 @@ This project was built to showcase my execution abilities, building and implemen
 You only need this command to run the project on your localhost:
 
 ```bash
-pip install foobar
+npm run dev
 ```
